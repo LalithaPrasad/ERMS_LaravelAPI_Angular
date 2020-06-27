@@ -1,0 +1,8 @@
+<fieldset>
+    <legend>Delete Employee</legend>
+    <form #deleteEmployeeForm='ngForm' (ngSubmit)='deleteemp()'>
+        <p><input type='number' [(ngModel)]='id' name='id'
+                  placeholder='Enter employee id' autofocus /></p>
+        <p><input type='submit' value='Delete' /></p>
+    </form>
+</fieldset>

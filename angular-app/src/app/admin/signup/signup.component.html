@@ -1,0 +1,12 @@
+<fieldset>
+    <legend>Signup</legend>
+    <form #signupForm='ngForm' (ngSubmit)='signup()'>
+        <p><input type='text' name='username' [(ngModel)]='username'
+                  placeholder='Enter username' /></p>
+        <p><input type='password' name='password' [(ngModel)]='password'
+                  placeholder='Enter password' /></p>
+        <p><input type='password' name='password1' [(ngModel)]='password1'
+                  placeholder='Enter password again' /></p>
+        <p><input type='submit' value='Signup' /></p>
+    </form>
+</fieldset>

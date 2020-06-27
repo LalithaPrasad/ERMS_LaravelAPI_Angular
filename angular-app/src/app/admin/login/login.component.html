@@ -1,0 +1,11 @@
+<fieldset>
+    <legend>Login</legend>
+    <form #loginForm='ngForm' (ngSubmit)='login()'>
+        <p><input type='text' name='username' [(ngModel)]='username'
+                  placeholder='Enter username' autofocus /></p>
+        <p><input type='password' name='password' [(ngModel)]='password'
+                  placeholder='Enter password' /></p>
+        <p><input type='submit' value='Login' /></p>
+    </form>
+    <p><a [routerLink]="['/admin/signup']">Click here to signup</a></p>
+</fieldset>

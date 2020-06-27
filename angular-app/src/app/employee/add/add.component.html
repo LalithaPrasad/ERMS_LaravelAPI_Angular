@@ -1,0 +1,14 @@
+<fieldset>
+    <legend>Add Employee</legend>
+    <form #addEmployeeForm='ngForm' (ngSubmit)='addemp()'>
+        <p><input type='text' [(ngModel)]='name' name='name'
+                  placeholder='Enter employee name' autofocus /></p>
+        <p><input type='number' [(ngModel)]='age' name='age'
+                  placeholder='Enter employee age' /></p>
+        <p><input type='text' [(ngModel)]='ed' name='ed'
+                  placeholder='Enter employee education' /></p>
+        <p><input type='text' [(ngModel)]='role' name='role'
+                  placeholder='Enter employee role' /></p>
+        <p><input type='submit' value='Add' /></p>
+    </form>
+</fieldset>
